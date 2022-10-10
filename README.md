@@ -13,3 +13,7 @@ git push -u origin main
 "private": true,
 "releaseType": "release"
 }
+
+git add .
+git commit -m "xxx"
+git push -u origin main
