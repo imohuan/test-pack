@@ -10,6 +10,20 @@ export default {
   preloadDir: srcResolve("preloads"),
   // "@imohuan/electron-manager"
   external: ["electron", "@electron/remote"],
+  packagePath: resolve(__dirname, "package.json"),
+  pack: {
+    // publish: ["github"],
+    publish: [
+      {
+        provider: "github",
+        token: "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",
+        owner: "imohuan",
+        repo: "https://github.com/imohuan/test-pack",
+        private: true,
+        releaseType: "release",
+      },
+    ],
+  },
   packTarget: "windows",
   packPreset: {
     appId: "com.electron.imohuan",
