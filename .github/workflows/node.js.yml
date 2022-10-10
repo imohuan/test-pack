@@ -20,6 +20,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - run: pnpm i
+      - run: npm i
       - run: npx manager build
-      - run: pnpm release
+      - run: npm release
